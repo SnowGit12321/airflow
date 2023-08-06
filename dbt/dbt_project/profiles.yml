@@ -1,0 +1,13 @@
+dbt_project:
+  outputs:
+    dev:
+      account: xz05138.us-east-2.aws
+      database: DEMO_dbt
+      role: dbt_dev_role
+      schema: public
+      threads: 10
+      type: snowflake
+      warehouse: dbt_dev_wh
+      user: "{{ env_var('dbt_user') }}"
+      password: "{{ env_var('dbt_password') }}"
+  target: dev

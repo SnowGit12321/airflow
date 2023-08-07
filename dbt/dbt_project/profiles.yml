@@ -1,7 +1,7 @@
 dbt_project:
   outputs:
     dev:
-      account: xz05138.us-east-2.aws
+      account: uy00560.us-east-2.aws
       database: DEMO_dbt
       role: dbt_dev_role
       schema: public
